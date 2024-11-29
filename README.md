@@ -21,6 +21,9 @@ The full article can be found
 - [Google OR-Tools - Routing](https://developers.google.com/optimization/routing)
 - [Prof. Güneş Erdoğan's VRP Spreadsheet Solver](https://people.bath.ac.uk/ge277/vrp-spreadsheet-solver/)
 - [Prof. Rhyd Lewis' Resources](https://rhydlewis.eu/#resources)
+- Sciortino, M., Lewis, R. & Thompson, J. A School Bus Routing Heuristic Algorithm Allowing Heterogeneous Fleets and Bus Stop Selection. SN COMPUT. SCI. 4, 74 (2023). [https://doi.org/10.1007/s42979-022-01466-6](https://doi.org/10.1007/s42979-022-01466-6) 
+- Gartner, D., Frey, M., & Kolisch, R. (2018). Hospital-wide therapist scheduling and routing: Exact and heuristic methods. IISE Transactions on Healthcare Systems Engineering, 8(4), 268–279. [https://doi.org/10.1080/24725579.2018.1530314](https://doi.org/10.1080/24725579.2018.1530314)
+
 
 ## Contact Information and Socials
 If you have any questions, or would like to keep up with my work, you can find me:
