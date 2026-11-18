@@ -3,13 +3,13 @@ Can operational research help Taylor Swift plan the perfect tour of London?
 
 In her song *London Boy*, from the album *Lover*, Taylor Swift mentions
 several locations in London. However, visiting these locations in the order
-that they appear in the song would not necessarily make for efficient journey.
+that they appear in the song would not necessarily make for an efficient journey.
 
 This raises an interesting question: 
 **What is the shortest route that visits all these locations?**
 
 Fortunately, operational research provides a way to answer this question
-through the *Travelling Salesman Problem* (TSP), a well known problem in
+through the *Travelling Salesman Problem* (TSP), a well-known problem in
 combinatorial optimisation. Doing so, we can help Taylor map out *The Best Day* 
 for her and her *London Boy*.
 
@@ -53,6 +53,11 @@ The objective is to find the shortest route that visits each location exactly
 once, with Brixton as the final destination, so that they can enjoy a night
 out as in the song.
 
+Following the assumptions outlined in the accompanying article, the couple 
+travel by scooter, with traffic conditions and parking constraints excluded from 
+the optimisation. The objective is therefore to minimise the total distance 
+travelled, rather than journey time.
+
 ## Methodology
 
 Since there are only nine locations, the problem is solved in Python using a 
@@ -62,7 +67,7 @@ one.
 The implementation uses:
 1. A distance matrix representing the distances between the locations.
 2. The `itertools` library to generate all possible permutations of the locations.
-3. A dummy destinations to enforce the specified endpoint.
+3. A dummy destination to enforce the specified endpoint.
 4. A comparison of route distances to determine the optimal solution.
 
 As every feasible route is evaluated, the brute-force approach can establish
@@ -70,13 +75,13 @@ an optimal solution for the specified distance matrix. However, the number
 of possible routes grows factorially with the number of locations, making this
 approach impractical for substantially larger problems.
 
-The implementation is provided in the Jupyter Notebook, 
+The implementation is provided in the Jupyter n, 
 `travelling_swiftie_problem.ipynb`.
 
 ## Results
 
-Using the distance matrix and contraints specified in the notebook, the
-minimum total distance is **19.00 miles**.
+Using the distance matrix and constraints specified in the notebook, the
+minimum total distance is **19 miles**.
 
 The optimal route identified is:
 Hackney → Shoreditch → Highgate → Hampstead Heath → Camden Market → Soho → Bond Street → West End → Brixton
@@ -86,9 +91,15 @@ model. Actual travel distances and the most practical route may differ
 depending on the mode of transport, traffic conditions, and other 
 real-world factors.
 
+For a comparison with the route suggested by the song, further discussion
+of the problem's assumptions, and examples of how routing optimisation 
+can be applied beyond leisure trips, please see my article, 
+[The Travelling Swiftie Problem](https://www.tandfonline.com/doi/full/10.1080/2058802X.2024.2388417), 
+published in the OR Society's *Impact* magazine.
+
 ## Running the Code
 
-The project is implemented in Python and provided as a Jupyter Notebook. 
+The project is implemented in Python and provided as a Jupyter notebook. 
 
 To run the code locally:
 
@@ -103,7 +114,7 @@ pip install -r requirements.txt
 pip install jupyter
 ```
 
-***3. Open the Jupyter Notebook:***
+***3. Open the Jupyter notebook:***
 ```bash
 jupyter notebook travelling_swiftie_problem.ipynb
 ```
