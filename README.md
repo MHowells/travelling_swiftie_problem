@@ -19,6 +19,16 @@ This repository contains the Python code accompanying my article,
 OR in Education programme. It also provides the resources referenced in my 
 presentations on the topic.
 
+## Contents
+
+- [The Problem](#the-problem)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Running the Code](#running-the-code)
+- [Publication and Outreach](#publication-and-outreach)
+- [Resources](#resources)
+- [Contact](#contact)
+
 ## The Problem
 
 The Travelling Salesman Problem seeks to determine the shortest possible 
